@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int c=0;
+int fib(int n) {
+c++;
+if((n==1)||(n==0)) {
+c++;
+return(n);
+}else {
+c++;
+return(fib(n-1)+fib(n-2));
+}
+}
+int main() {
+int n , i=0;
+cout << "Enter the number of terms of series : ";
+c++;
+cin >> n;
+c++;
+cout << "\nFibonnaci Series : ";
+while(i < n) {
+cout << " " << fib(i);
+i++;
+}
+cout<<endl;
+cout<<"Number of instructions are: "<<c<<endl;
+return 0;
+}
