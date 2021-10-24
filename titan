@@ -1,0 +1,30 @@
+// C# program to create Hashtable
+using System;
+using System.Collections;
+
+class GFG {
+
+	// Main method
+	static void Main(string[] args)
+	{
+
+		// create and initalize Hash table
+		// using Add() method
+		Hashtable g = new Hashtable();
+		g.Add(1, "welcome");
+		g.Add(2, "to");
+		g.Add(3, "tutorials");
+		g.Add(4, "of");
+		g.Add(5, "C#");
+
+		ICollection key = g.Keys;
+
+		// Print Hash table
+		Console.WriteLine("Hashtable:");
+		Console.WriteLine();
+		foreach(var val in key)
+		{
+			Console.WriteLine(val + "-" + g[val]);
+		}
+	}
+}
